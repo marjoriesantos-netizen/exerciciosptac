@@ -1,0 +1,1 @@
+function StatusAPI({ carregando, erro, quantidade }) { if (carregando) { return <p>Carregando...</p>; } if (erro) { return <p>Erro: {erro}</p>; } if (quantidade === 0) { return <p>Nenhum item encontrado.</p>; } return <p>Sucesso: {quantidade} itens carregados.</p>; } export default StatusAPI;
